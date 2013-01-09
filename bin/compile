@@ -4,7 +4,7 @@
 set -eo pipefail
 
 # Prepend proper path for virtualenv hackery. Will be deprecated soon.
-export PATH=:/usr/local/bin:$PATH
+export PATH=:/usr/local/bin:/app/bin:$PATH
 
 BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
 ROOT_DIR=$(dirname $BIN_DIR)
